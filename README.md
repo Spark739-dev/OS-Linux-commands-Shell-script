@@ -425,18 +425,22 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot from 2025-03-09 11-25-51](https://github.com/user-attachments/assets/405d712b-0f1b-4e2d-b463-445e1b1295f3)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot from 2025-03-09 11-26-51](https://github.com/user-attachments/assets/6cefa1d0-c24a-46e4-bf69-e1480454e918)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+![Screenshot from 2025-03-09 11-34-34](https://github.com/user-attachments/assets/125603d4-d4cd-42d8-9fe8-0912454e8fce)
+
 gunzip backup.tar.gz
 ## OUTPUT
+![Screenshot from 2025-03-09 11-35-02](https://github.com/user-attachments/assets/fdbd2537-50a9-4596-b790-746ab6e3b0b4)
 
  
 # Shell Script
@@ -540,6 +544,7 @@ fi
 ^d
 ```
 
+
 cat strcomp.sh 
 ```bash
 \#!/bin/bash
@@ -560,6 +565,8 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![Screenshot from 2025-03-04 13-32-55](https://github.com/user-attachments/assets/80715d09-6743-4bed-959d-bb9afde22f39)
+
 
 
 # check file ownership
@@ -587,6 +594,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot from 2025-03-07 09-31-56](https://github.com/user-attachments/assets/a9acf833-92ec-4fc0-a587-b3d29c2e1596)
 
 # check if with file location
 cat>ifnested.sh 
@@ -633,6 +641,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![Screenshot from 2025-03-07 09-32-53](https://github.com/user-attachments/assets/e0b9fc21-c875-45c9-b664-38385b635b6d)
 
 
 
@@ -677,6 +686,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Screenshot from 2025-03-07 09-33-23](https://github.com/user-attachments/assets/806fe2ab-9a9e-4dd8-a52c-cc3800517bc3)
 
 # check if a file
 cat > ifnested.sh 
@@ -726,6 +736,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![Screenshot from 2025-03-07 09-34-11](https://github.com/user-attachments/assets/0f1e99fb-3769-4434-b3d7-a0f355d644dc)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -754,6 +765,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![Screenshot from 2025-03-07 09-34-48](https://github.com/user-attachments/assets/660ea8cf-4ed6-4888-a3c0-c1fc8aebde3b)
 
 
 # testing compound comparisons
@@ -770,6 +782,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot from 2025-03-07 09-36-13](https://github.com/user-attachments/assets/d5ace1e2-cc4f-498c-8e6a-b939cd048e03)
 
 # using the case command
 cat >casecheck.sh 
@@ -789,6 +802,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+## OUTPUT
+![Screenshot from 2025-03-09 08-40-24](https://github.com/user-attachments/assets/c3265d01-3b42-4b96-81f9-654c5c4f95cf)
+
  
 cat > whiletest
 ```bash
@@ -804,6 +820,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+## OUTPUT
+![Screenshot from 2025-03-09 09-03-09](https://github.com/user-attachments/assets/6668205e-2265-4ac8-8a83-74ab3f66014a)
+
  
  
 cat untiltest.sh 
@@ -817,6 +836,9 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
+##OUTPUT
+![Screenshot from 2025-03-09 09-04-01](https://github.com/user-attachments/assets/1693a9d9-f939-4855-8d1a-7867bd8595b0)
+
  
  
  
@@ -831,6 +853,9 @@ done
  ```
  
 $ chmod 755 forin1.sh
+## OUTPUT
+![Screenshot from 2025-03-09 09-04-30](https://github.com/user-attachments/assets/211b2f22-9a20-41b8-846a-1571536b0886)
+
  
  
 cat forin2.sh 
@@ -844,6 +869,9 @@ done
  ```
  
 $ chmod 755 forin2.sh
+## OUTPUT
+![Screenshot from 2025-03-09 09-05-17](https://github.com/user-attachments/assets/25783cfa-269a-4622-a873-7e551c52ba68)
+
  
 cat forin2.sh 
 ```bash
@@ -857,7 +885,9 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+## OUTPUT
+ ![Screenshot from 2025-03-09 09-05-17](https://github.com/user-attachments/assets/1d619a70-30d2-4bfe-8abf-14fc8c8799ec)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -868,7 +898,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ## OUTPUT
+ ![Screenshot from 2025-03-09 09-05-43](https://github.com/user-attachments/assets/af848112-eea4-407c-86fd-85d5a9f4ca45)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -881,6 +913,9 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![Screenshot from 2025-03-09 10-22-49](https://github.com/user-attachments/assets/668794aa-a06c-4e66-8272-5fc138f29da5)
+
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -902,6 +937,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+![Screenshot from 2025-03-09 10-21-03](https://github.com/user-attachments/assets/69bb1ac6-fba7-4618-90a3-a723a1e08f61)
 
 
 cat forctype.sh 
@@ -916,6 +952,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Screenshot from 2025-03-09 11-02-01](https://github.com/user-attachments/assets/4ed0b018-1bdd-4c1b-9907-bb2379b51498)
 
 cat forctype1.sh 
 ```bash
@@ -929,6 +966,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Screenshot from 2025-03-09 09-18-11](https://github.com/user-attachments/assets/f6b729b6-912f-4cb6-bdaf-09b94b2cd9da)
 
 cat fornested1.sh 
 ```bash
@@ -947,6 +985,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![Screenshot from 2025-03-09 10-06-58](https://github.com/user-attachments/assets/1f55e402-36c4-480e-99ed-d568816002ce)
 
  
 cat forbreak.sh 
@@ -963,11 +1002,13 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+## OUTPUT
+![Screenshot from 2025-03-09 10-33-15](https://github.com/user-attachments/assets/9e737fb4-1cbf-4fec-9753-77b3fb2cb50a)
+
  
 cat forbreak.sh 
 ```bash
@@ -982,14 +1023,18 @@ fi
 echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
+
 ```
+## OUTPUT
+
 
  
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Screenshot from 2025-03-09 09-04-30](https://github.com/user-attachments/assets/637946c6-1c0f-474a-bb7c-795fb67062f0)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -1004,6 +1049,9 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![Screenshot from 2025-03-09 11-10-28](https://github.com/user-attachments/assets/38c55ba0-9f5e-40b8-a889-99d36e6bce05)
+
+
 
  cat exread1.sh
 ```bash
@@ -1015,6 +1063,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
+![Screenshot from 2025-03-09 09-39-47](https://github.com/user-attachments/assets/189a4b07-2129-4ce6-b3f8-422623bd7fc4)
 
 
 
@@ -1037,9 +1086,11 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
+![Screenshot from 2025-03-09 11-13-45](https://github.com/user-attachments/assets/1c7926c0-7f6a-4115-bb6e-ae4e24e9d42b)
 
  
  ./funcex.sh 1 2
+![Screenshot from 2025-03-09 11-14-04](https://github.com/user-attachments/assets/a6ca84e2-eb17-45a6-bb83-b4f86fc612d5)
 
  
 cat argshift.sh
@@ -1054,7 +1105,8 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![Screenshot from 2025-03-09 10-01-01](https://github.com/user-attachments/assets/dd7d1055-a00d-4421-bad1-994676944e50)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1071,6 +1123,11 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+
+![Screenshot from 2025-03-09 11-19-34](https://github.com/user-attachments/assets/d5873baa-be93-4899-923e-b78bbb3fbf44)
+
+
+
  
 cat argshift.sh
 ```bash
@@ -1085,6 +1142,8 @@ set +x
 ## OUTPUT
  ./argshift.sh 1 2 3
  
+ ![Screenshot from 2025-03-09 10-01-33](https://github.com/user-attachments/assets/2cdb9ad4-8dab-45cd-a8b7-94874e1ab455)
+
  
 cat > nc.awk
 ```bash
@@ -1115,7 +1174,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Screenshot from 2025-03-09 10-02-40](https://github.com/user-attachments/assets/2752034c-b0df-44fb-ac5e-881b2eefef2f)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1142,6 +1202,7 @@ else
 fi
 ```
 ## OUTPUT 
+![Screenshot from 2025-03-09 10-03-03](https://github.com/user-attachments/assets/99380b83-8fa0-43a6-a6d8-6e06bd03855d)
 
 
 # RESULT:
